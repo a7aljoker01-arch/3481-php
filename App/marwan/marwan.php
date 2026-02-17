@@ -1,5 +1,5 @@
 <?php
-namespace 3481-php\App\marwan;
+namespace S3481php\App\marwan;
 class marwan{
 
 static string $name='marwan';
