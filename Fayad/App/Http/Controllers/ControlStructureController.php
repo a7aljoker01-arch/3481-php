@@ -31,34 +31,21 @@ class ControlStructureController
     }
 
     // Create the temp function as follow: 35+ => Too Hot, 25+ => Normal, 15+ => coll, 5+ => cold, 0-, Frozen
-
-    public static function temp(float $degree)
-    {
-
-        if ($degree >= 35) {
-            echo "the $degree is too hot<hr >";
-        } elseif ($degree <= 25) {
-            echo "the $degree is normal<hr >";
-        } elseif ($degree <= 15) {
-            echo "the $degree is cold<hr >";
-      } elseif ($degree <= 0) {
-            echo "the $degree is frozen<hr >";
-       
+    public static function tempStatus(float $temp): string {
+        if ($temp >= 35) {
+            return "Weather is Too Hot.";
+        }
+        elseif ($temp >= 25) {
+            return "Weather is Normal.";
+        }
+        elseif ($temp >= 15) {
+            return "Weather is Cool.";
+        }
+        elseif ($temp >= 5) {
+            return "Weather is Cold.";
+        }
+        else {
+            return "Weather is Frozen.";
         }
     }
-};
-
-public static function weatherCondition($temp){
-if($temp >=35){
-    echo"too hot";
-}elseif($temp>=25){ echo"Normal<br>";}
-elseif($temp>=15){ echo"Coll<br>";}
-elseif($temp>=5){ echo"Cold<br>";}
-else {echo "Frozen<br>";}
-
-
-}
-
-
-
 }

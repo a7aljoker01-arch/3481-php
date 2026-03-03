@@ -1,5 +1,5 @@
 <?php
-require_once '\wamp64\www\challenges\vendor\autoload.php';
+require_once 'vendor/autoload.php';
 
 $orders = [
     ['id' => 1, 'total' => 250],
