@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Maged\Http\Controllers;
+
+class ControlStructureController
+{
+
+    private static $mobilePrice = 12000;
+
+    public static function ternary(float $wallet)
+    {
+        $mobPrice = self::$mobilePrice;
+
+        echo  $wallet >= self::$mobilePrice ?  "You have EGP$wallet, You can buy it :)<hr >" : "Mobile price is $mobPrice, and you have $wallet, so you are too pooooor<hr >";
+    }
+
+    public static function ifCondition(float $score)
+    {
+
+        if ($score >= 90) {
+            echo "Grade for score $score is Excellent<hr >";
+        } elseif ($score >= 75) {
+            echo "Grade for score $score is Very Good<hr >";
+        } elseif ($score >= 65) {
+            echo "Grade for score $score is Good<hr >";
+        } elseif ($score >= 50) {
+            echo "Grade for score $score is Pass<hr >";
+        } else {
+            echo "Grade for score $score is Fail<hr >";
+        }
+    }
+
+    public static function temp(float $temp): string {
+        return "The temp is: $temp";
+    }
+}
