@@ -15,3 +15,8 @@ ControlStructureController::ifCondition(79);
 ControlStructureController::ifCondition(33);
 
 // Test the temp function many times(5+)
+ControlStructureController::weatherCondition(0);
+ControlStructureController::weatherCondition(5);
+ControlStructureController::weatherCondition(16);
+ControlStructureController::weatherCondition(30);
+ControlStructureController::weatherCondition(35);

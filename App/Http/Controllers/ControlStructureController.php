@@ -31,4 +31,17 @@ class ControlStructureController
     }
 
     // Create the temp function as follow: 35+ => Too Hot, 25+ => Normal, 15+ => coll, 5+ => cold, 0-, Frozen
+public static function weatherCondition($temp){
+if($temp >=35){
+    echo"too hot";
+}elseif($temp>=25){ echo"Normal<br>";}
+elseif($temp>=15){ echo"Coll<br>";}
+elseif($temp>=5){ echo"Cold<br>";}
+else {echo "Frozen<br>";}
+
+
+}
+
+
+
 }
