@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Fayad\Http\Controllers;
 
 class ControlStructureController
 {
@@ -30,22 +30,25 @@ class ControlStructureController
         }
     }
 
-    // Create the temp function as follow: 35+ => Too Hot, 25+ => Normal, 15+ => coll, 5+ => cold, 0-, Frozen
-    public static function tempStatus(float $temp): string {
-        if ($temp >= 35) {
-            return "Weather is Too Hot.";
-        }
-        elseif ($temp >= 25) {
-            return "Weather is Normal.";
-        }
-        elseif ($temp >= 15) {
-            return "Weather is Cool.";
-        }
-        elseif ($temp >= 5) {
-            return "Weather is Cold.";
-        }
-        else {
-            return "Weather is Frozen.";
-        }
+    public static function temp(float $temp): string {
+        return "The temp is: $temp";
     }
+public static function tempStatus(float $temp): string {
+    if ($temp >= 35) {
+        return "Weatehr is too hot.";
+    }
+    elseif ($temp >= 25) {
+        return "Weatehr is normal.";
+    }
+    elseif ($temp >= 15) {
+        return "Weatehr is cool.";
+    }
+    elseif ($temp >= 5) {
+        return "Weatehr is cold.";
+    }
+    else {
+        return "Weatehr is Frozen.";
+    }
+}
+
 }
