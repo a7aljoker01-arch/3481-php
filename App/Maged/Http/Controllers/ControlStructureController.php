@@ -108,7 +108,7 @@ class ControlStructureController
         echo 'Switch-case completed successfully';
     }
 
-  public static function weekDaysMessage(string $dayName): string
+    public static function weekDaysMessage(string $dayName): string
     {
         $dayName = strtolower($dayName);
 
@@ -120,8 +120,8 @@ class ControlStructureController
             case 'thursday':
                 return 'Enjoy your work.';
 
-          case 'friday':
-           case 'saturday':
+            case 'friday':
+            case 'saturday':
                 return 'Happy weekend';
 
             default:
@@ -149,5 +149,19 @@ class ControlStructureController
             'cancelled', 'refunded' =>  'red',
             default => 'gray'
         };
+    }
+
+    public static function printOdd(int $min, int $max): array
+    {
+        $oddNumbers = [];
+
+        for ($i = $min; $i <= $max; $i++) {
+
+            if ($i % 2 === 0) continue;
+
+            $oddNumbers[] = $i;
+        }
+
+        return $oddNumbers;
     }
 }
