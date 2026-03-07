@@ -118,6 +118,6 @@ class ControlStructureController
             "sunday","monday","tuesday","wednesday","thursday" => 'Enjoy your work',
             "friday","saturday" => 'Happy weekend',
             default => 'Wrong Day'
-        }
+        };
     }
 }
