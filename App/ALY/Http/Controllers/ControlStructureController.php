@@ -110,5 +110,22 @@ else {echo "Frozen<br>";}
         echo 'Switch-case completed successfully';
     }
 
+    public static function weekDaysMessage ($dayName) 
+    {
+        switch ($dayName){
+
+            case 'Saturday':
+            case 'Friday':
+                return 'Happy weekend';
+                
+            case 'Sunday':    
+            case 'Monday':    
+            case 'Tuesday':    
+            case 'Wednesday':    
+            case 'Thursday':
+                return 'Enjoy your work';    
+        }
+    }
+
 
 }
