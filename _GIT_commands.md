@@ -101,3 +101,49 @@ git remote -v
 ```bash
 git remote set-url <origin> <URL>
 ```
+
+## Create a new branch
+```bash
+git branch <BRANCH_NAME>
+```
+
+## Navigate to a ranch
+```bash
+git checkout <BRANCH_NAME>
+```
+
+## Create a new branch and navigate to it
+```bash
+git checkout -b <BRANCH_NAME>
+```
+
+## List all branched
+```bash
+git branch
+```
+
+## Delete a branch
+- Navigate to other branch (pref. main)
+```bash
+git branch -D <BRANCH_NAME>
+```
+
+## Undo a commit
+1- undo one commit and keep files in stage
+```bash
+git reset --soft HEAD~1
+```
+
+2- undo one commit and discard changes to files
+```bash
+git reset --hard HEAD~1
+```
+
+2- undo one or more commits. ex. 6 commits
+```bash
+# Soft
+ git reset --soft HEAD~6
+
+# Hard
+git reset --hard HEAD~6
+```

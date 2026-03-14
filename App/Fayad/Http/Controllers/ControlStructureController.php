@@ -50,7 +50,7 @@ public static function tempStatus(float $temp): string {
         return "Weatehr is Frozen.";
     }
 }
-    public static function weekDaysMessage ($dayName) {
+    public static function weekDaysMessage (string $dayName): string {
         // Use switch-case to get a message
         /**
          * Saturday and Friday  => Happy weekend
@@ -75,5 +75,30 @@ public static function tempStatus(float $temp): string {
             default:
                 return 'Wrong day name.';
         }
+    }
+    public static function DaysMessage(string $dayName): string {
+
+        $dayName = strtolower($dayName);
+
+        return match ($dayName) {
+            'sunday', 'monday',
+            'tuesday', 'wednesday',
+            'thursday' => 'Enjoy your work.',
+            'saturday', 'friday' => 'Happy weekend.',
+            default => 'Wrong day name.'
+        };
+    }
+    public static function create_even_array(int $min, int $max): array {
+        $even_array = [];
+
+        for ($i = $min; $i <= $max; $i++) {
+            if ($i % 2 == 0) {
+                array_push($even_array, $i);
+            }
+            else {
+                continue;
+            }
+        }
+        return $even_array;
     }
 }

@@ -8,7 +8,3 @@ require_once '../App/Maged/Helpers/functions.php';
 // App\Maged\Http\Controllers\ProductController::refine();
 
 // App\Maged\Http\Controllers\UserController::old_users();
-
-
-
-App\Maged\Http\Controllers/ControlStructureController::weekDaysMessage ('Thursday');
