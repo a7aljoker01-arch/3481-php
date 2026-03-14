@@ -10,15 +10,8 @@
 <body>
     <h1>Login</h1>
     <form action="">
-        <div>
-            <label for="email">Eamil</label>
-            <input type="email" id="email" name="email">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-        </div>
 
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit rerum ipsum consequatur rem fugit corporis nulla enim unde voluptatem. Tempore aliquid nihil adipisci delectus blanditiis a pariatur sequi tenetur excepturi!</p>
         <button>Login</button>
     </form>
 </body>
